@@ -1,0 +1,51 @@
+<Window x:Class="AutoService.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Автосервис" Width="1180" Height="730"
+        MinWidth="950" MinHeight="580" WindowStartupLocation="CenterScreen"
+        Background="#F4F7FA" FontFamily="Segoe UI">
+    <Grid>
+        <Grid.ColumnDefinitions><ColumnDefinition Width="230"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+        <Border Background="#173148" Grid.Column="0">
+            <DockPanel>
+                <StackPanel DockPanel.Dock="Top">
+                    <TextBlock Text="АВТОСЕРВИС" FontSize="21" FontWeight="Bold" Foreground="White" Margin="25,28,0,5"/>
+                    <TextBlock Text="УЧЁТ И РЕМОНТ" FontSize="10" Foreground="#9DADB9" Margin="25,0,0,32"/>
+                    <Button Content="Заказы на ремонт" Tag="orders" Style="{StaticResource SidebarButton}" Click="Navigate_Click"/>
+                    <Button Content="Автомобили" Tag="cars" Style="{StaticResource SidebarButton}" Click="Navigate_Click"/>
+                    <Button Content="Клиенты" Tag="owners" Style="{StaticResource SidebarButton}" Click="Navigate_Click"/>
+                    <Button Content="Услуги" Tag="services" Style="{StaticResource SidebarButton}" Click="Navigate_Click"/>
+                    <Button Content="Запчасти" Tag="parts" Style="{StaticResource SidebarButton}" Click="Navigate_Click"/>
+                </StackPanel>
+                
+            </DockPanel>
+        </Border>
+        <Grid Grid.Column="1" Margin="28,24,28,22">
+            <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Margin="0,0,0,20">
+                <TextBlock x:Name="SectionTitle" Text="Заказы на ремонт" FontSize="27" FontWeight="SemiBold" Foreground="#173148"/>
+                <TextBlock x:Name="SectionHint" Text="Просмотр и управление данными" FontSize="13" Foreground="#667B8D" Margin="0,5,0,0"/>
+            </StackPanel>
+            <Grid Grid.Row="1" Margin="0,0,0,16">
+                <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+                <TextBox x:Name="SearchBox" Grid.Column="0" Height="39" VerticalContentAlignment="Center"
+                         ToolTip="Поиск по текущему разделу" TextChanged="SearchBox_TextChanged"/>
+                <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="16,0,0,0">
+                    <Button Content="Добавить" Click="Add_Click"/>
+                    <Button x:Name="EditButton" Content="Изменить" Click="Edit_Click" IsEnabled="False" Background="#3D6680"/>
+                    <Button x:Name="DeleteButton" Content="Удалить" Click="Delete_Click" IsEnabled="False" Background="#B64D51"/>
+                    <Button Content="Обновить" Click="Refresh_Click" Background="#53667B" Margin="0"/>
+                </StackPanel>
+            </Grid>
+            <Border Grid.Row="2" Background="White" BorderBrush="#E0E7ED" BorderThickness="1" CornerRadius="8">
+                <DataGrid x:Name="EntriesGrid" AutoGenerateColumns="False" IsReadOnly="True"
+                          CanUserAddRows="False" CanUserDeleteRows="False" SelectionMode="Single"
+                          GridLinesVisibility="Horizontal" HorizontalGridLinesBrush="#EAF0F4"
+                          Background="Transparent" BorderThickness="0" RowHeight="37" ColumnHeaderHeight="42"
+                          AlternatingRowBackground="#F8FAFC" SelectionChanged="EntriesGrid_SelectionChanged"
+                          MouseDoubleClick="EntriesGrid_MouseDoubleClick"/>
+            </Border>
+            <TextBlock x:Name="StatusText" Grid.Row="3" Text="Готово" Margin="0,13,0,0" FontSize="12" Foreground="#61768A"/>
+        </Grid>
+    </Grid>
+</Window>

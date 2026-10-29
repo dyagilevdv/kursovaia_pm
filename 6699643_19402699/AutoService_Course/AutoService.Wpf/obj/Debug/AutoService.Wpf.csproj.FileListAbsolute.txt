@@ -1,0 +1,15 @@
+C:\Users\dmitr\OneDrive\Desktop\Курсовая\6699643_19402699\AutoService_Course\AutoService.Wpf\bin\Debug\AutoService.Wpf.exe.config
+C:\Users\dmitr\OneDrive\Desktop\Курсовая\6699643_19402699\AutoService_Course\AutoService.Wpf\bin\Debug\AutoService.Wpf.exe
+C:\Users\dmitr\OneDrive\Desktop\Курсовая\6699643_19402699\AutoService_Course\AutoService.Wpf\bin\Debug\AutoService.Wpf.pdb
+C:\Users\dmitr\OneDrive\Desktop\Курсовая\6699643_19402699\AutoService_Course\AutoService.Wpf\obj\Debug\AutoService.Wpf.csproj.AssemblyReference.cache
+C:\Users\dmitr\OneDrive\Desktop\Курсовая\6699643_19402699\AutoService_Course\AutoService.Wpf\obj\Debug\MainWindow.baml
+C:\Users\dmitr\OneDrive\Desktop\Курсовая\6699643_19402699\AutoService_Course\AutoService.Wpf\obj\Debug\EditDialog.baml
+C:\Users\dmitr\OneDrive\Desktop\Курсовая\6699643_19402699\AutoService_Course\AutoService.Wpf\obj\Debug\App.baml
+C:\Users\dmitr\OneDrive\Desktop\Курсовая\6699643_19402699\AutoService_Course\AutoService.Wpf\obj\Debug\MainWindow.g.cs
+C:\Users\dmitr\OneDrive\Desktop\Курсовая\6699643_19402699\AutoService_Course\AutoService.Wpf\obj\Debug\EditDialog.g.cs
+C:\Users\dmitr\OneDrive\Desktop\Курсовая\6699643_19402699\AutoService_Course\AutoService.Wpf\obj\Debug\App.g.cs
+C:\Users\dmitr\OneDrive\Desktop\Курсовая\6699643_19402699\AutoService_Course\AutoService.Wpf\obj\Debug\AutoService.Wpf_MarkupCompile.cache
+C:\Users\dmitr\OneDrive\Desktop\Курсовая\6699643_19402699\AutoService_Course\AutoService.Wpf\obj\Debug\AutoService.Wpf.g.resources
+C:\Users\dmitr\OneDrive\Desktop\Курсовая\6699643_19402699\AutoService_Course\AutoService.Wpf\obj\Debug\AutoService.Wpf.csproj.CoreCompileInputs.cache
+C:\Users\dmitr\OneDrive\Desktop\Курсовая\6699643_19402699\AutoService_Course\AutoService.Wpf\obj\Debug\AutoService.Wpf.exe
+C:\Users\dmitr\OneDrive\Desktop\Курсовая\6699643_19402699\AutoService_Course\AutoService.Wpf\obj\Debug\AutoService.Wpf.pdb
